@@ -18,5 +18,10 @@
 
 # Ignore application configuration
 /config/application.yml
+
 # Ignore test coverage files from SimpleCov
 /coverage
+
+# Ignore test coverage files from SimpleCov
+.DS_store
+.DS_Store
