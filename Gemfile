@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-ruby '2.3.0'
 
 gem 'rails', '~> 5.0.4'
 gem 'pg', '~> 0.18'
@@ -17,7 +16,7 @@ gem 'sprockets-es6'
 gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'faraday'
-gem 'faker', git: 'git://github.com/stympy/faker.git', branch: 'master'
+gem 'faker'
 gem 'bootstrap_form'
 
 group :development, :test do
