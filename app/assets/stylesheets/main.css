@@ -1,16 +1,10 @@
-/*!
- * SNOW Landing Page Theme
- *
- * Created by Visual Soldiers
- * Visit us at http://www.visualsoldiers.com
- *
- * Handcrafted with love in Atlanta!
- */
-
-
 /* ==========================================================================
    Global styles
    ========================================================================== */
+body {
+  padding-top: 60px;
+}
+
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
   font-family: 'Montserrat', sans-serif;
 }
@@ -239,8 +233,8 @@ a:hover, a:focus {
     min-height: 60px;
     padding-top: 8px;
     position: fixed;
-    top: -60px;
-    transition: top 0.4s ease 0s;
+    top: 0px;
+    /*transition: top 0.4s ease 0s;*/
 }
 
 .navbar.open {
@@ -261,7 +255,7 @@ a:hover, a:focus {
 .nav > li > a {
     position: relative;
     display: block;
-    padding: 10px 10px;
+    padding: 15px 10px;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -284,8 +278,8 @@ a:hover, a:focus {
 header {
   background: image-url('denver_at_dusk.jpg') no-repeat center center;
   width: 100%;
-  padding: 20px 10px 60px 10px;
-  height: 100vh;
+  padding: 0px 10px 60px 10px;
+  height: 85vh;
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
@@ -300,7 +294,7 @@ header {
   left: 0;
   right: 0;
   margin-left: 0px;
-  margin-bottom: 12%;
+  margin-bottom: 20%;
 }
 
 .signin {
@@ -308,7 +302,7 @@ header {
 }
 
 
-.mouse-icon {
+/*.mouse-icon {
     border: 2px solid #fff;
     border-radius: 16px;
     display: block;
@@ -335,7 +329,7 @@ header {
     position: relative;
     top: 4px;
     width: 4px;
-}
+}*/
 @keyframes scrolling {
 0% {
     opacity: 0;
@@ -370,7 +364,7 @@ header {
 
 
 #be-the-first {
-  background: image-url('be-the-first-bg.jpg') #231f20 no-repeat center center fixed;
+  background: image-url('city_bg_dark.jpg') #231f20 no-repeat center center fixed;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;

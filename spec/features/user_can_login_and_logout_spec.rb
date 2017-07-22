@@ -14,9 +14,9 @@ RSpec.feature "as a user" do
 
     expect(current_path).to eq(root_path)
     expect(page).to have_content("Welcome: #{@user.email}")
-    expect(page).to have_content("Signout")
+    expect(page).to have_content("Sign Out")
 
-    click_on "Signout"
+    click_on "Sign Out"
 
     expect(current_path).to eq(login_path)
     expect(page).to have_content("Sign Up")
