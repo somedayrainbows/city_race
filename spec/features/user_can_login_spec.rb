@@ -17,7 +17,7 @@ RSpec.feature "as a user" do
     fill_in "password", with: "#{@user.password}"
     click_on "Submit"
 
-    expect(current_path).to eq(root_path)
+    expect(current_path).to eq(user_path(@user.id))
     expect(page).to have_content("You have logged in successfully.")
     within(".navbar-collapse") do
       expect(page).to have_content("Log Out")
