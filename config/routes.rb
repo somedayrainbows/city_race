@@ -10,4 +10,11 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
+  # resources :hunts, only: [:show, :index, :new, :create, :edit, :destroy]
+
+  resources :users do
+    resources :hunts
+  end
+
+
 end
