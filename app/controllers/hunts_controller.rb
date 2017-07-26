@@ -11,7 +11,6 @@ class HuntsController < ApplicationController
 
   def new
     @hunt = current_user.hunts.new
-
   end
 
   def create

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "as an authenticated user" do
+RSpec.feature "as an unauthenticated user" do
   scenario "I cannot access pages beyond login, signup, or home" do
 
     visit '/hunts/new'

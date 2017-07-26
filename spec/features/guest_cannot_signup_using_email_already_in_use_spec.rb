@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "as an authenticated user, when I try to sign up" do
+RSpec.feature "as an unauthenticated user, when I try to sign up" do
   scenario "I cannot sign up with an email already in use" do
     user1 = create(:user, email: "jane@janedoe.com", password: "password", password_confirmation: "password")
 
