@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row header-info">
       <div class="col-sm-10 col-sm-offset-1 text-center">
-        <h1 class="wow fadeIn">Hi Denver</h1>
+        <h1 class="wow fadeIn">Hi, Denver</h1>
         <br />
-        <p class="lead wow fadeIn" data-wow-delay="0.5s">Create an urban hunt, invite teams, and get ready to race to the finish! <br>
+        <p class="lead wow fadeIn" data-wow-delay="0.5s"><font size="+6">Create an urban hunt, invite teams, and get ready to race to the finish!</font><br>
         </p>
         <br />
 
@@ -13,7 +13,7 @@
             <% if current_user %>
             <div class="row"><!--Begin Button Row-->
               <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                <%= link_to "Create Hunt", new_hunt_path, class: "btn btn-secondary btn-lg scroll" %>
+                <%= link_to "Create Hunt", new_hunt_path, class: "btn btn-secondary btn-lg scroll", id: "new-hunt" %>
               </div>
               <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
                 <a href="#" class="btn btn-primary btn-lg scroll">Join a Team</a>

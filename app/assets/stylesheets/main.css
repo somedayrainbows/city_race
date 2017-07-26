@@ -125,6 +125,11 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.btn-new {
+  background-color:#ef5323;
+  color: #ffffff;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #8be2e5;
   color: #ffffff;

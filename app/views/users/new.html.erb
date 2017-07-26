@@ -1,31 +1,38 @@
-<div class="form">
-  <div align="left" class="col-md-6 col-md-offset-3">
-    <h3>Register a new account</h3>
-      <%= bootstrap_form_for @user do |f| %>
-        <% if @user.errors.any? %>
-          <div class="error_messages">
-            <h2>Form is invalid</h2>
-            <ul>
-              <% @user.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form">
+        <div align="left" class="col-md-6 col-md-offset-3">
+          <br><br>
+          <h3><font size="+2">Register a new account</font></h3>
+          <br>
+            <%= bootstrap_form_for @user do |f| %>
+              <% if @user.errors.any? %>
+                <div class="error_messages">
+                  <h2>Form is invalid</h2>
+                  <ul>
+                    <% @user.errors.full_messages.each do |message| %>
+                      <li><%= message %></li>
+                    <% end %>
+                  </ul>
+                </div>
               <% end %>
-            </ul>
-          </div>
-        <% end %>
 
-        <div class="fields">
-          <%= f.text_field :first_name, required: true %>
-          <%= f.text_field :last_name, required: true %>
-          <%= f.text_field :email, required: true %>
-          <%= f.password_field :password, required: true %>
-          <%= f.password_field :password_confirmation, required: true %>
+              <div class="fields">
+                <%= f.text_field :first_name, required: true %>
+                <%= f.text_field :last_name, required: true %>
+                <%= f.text_field :email, required: true %>
+                <%= f.password_field :password, required: true %>
+                <%= f.password_field :password_confirmation, required: true %>
+              </div>
+              <div class="actions">
+                <%= f.submit "Submit", class: "btn btn-new btn-sm scroll" %>
+              </div>
+          <% end %>
+          <br><br>
+          <p>Already a user? <%= link_to "Log in here", login_path %> </p>
         </div>
-        <div class="actions">
-          <%= f.submit "Submit" %>
-        </div>
-    <% end %>
-    <br><br>
-    <p>Already a user? <%= link_to "Log in by clicking here", login_path %> </p>
-
+      </div>
+    </div>
   </div>
 </div>
