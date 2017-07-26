@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   resources :users, only: [:show]
+  resources :hunts
+  resources :teams
 
 end

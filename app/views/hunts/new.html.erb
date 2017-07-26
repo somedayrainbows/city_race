@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="new-hunt-form">
+        <div align="left" class="col-md-6 col-md-offset-3">
+          <br><br>
+          <h3><font size="+2">Create a Hunt</font></h3>
+          <br>
+          <%= bootstrap_form_for(@hunt) do |f| %>
+            <%= f.text_field :name %>
+            <%= f.text_field :description %>
+            <%= f.submit "Create Hunt", class: "btn btn-new btn-sm scroll" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
