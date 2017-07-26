@@ -9,12 +9,6 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   resources :users, only: [:show]
-
-  # resources :hunts, only: [:show, :index, :new, :create, :edit, :destroy]
-
-  resources :users do
-    resources :hunts
-  end
-
+  resources :hunts
 
 end
