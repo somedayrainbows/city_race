@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "as an authenticated user, when I try to sign up" do
+RSpec.feature "as an unauthenticated user, when I try to sign up" do
   scenario "I cannot sign up if password and confirmation do not match" do
     visit root_path
     within(".navbar-collapse") do

@@ -2,7 +2,6 @@ class HuntsController < ApplicationController
   before_action :authorize
 
   def show
-    @hunt = Hunt.find(params[:id])
   end
 
   def index
@@ -11,7 +10,6 @@ class HuntsController < ApplicationController
 
   def new
     @hunt = current_user.hunts.new
-
   end
 
   def create

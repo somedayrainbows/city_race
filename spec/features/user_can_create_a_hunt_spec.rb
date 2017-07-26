@@ -5,7 +5,7 @@ RSpec.feature "as an authenticated user" do
     @user = create(:user)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
   end
-  scenario "i create a new hunt" do
+  scenario "i can create a new hunt" do
     visit root_path
     click_on "Create Hunt"
 
