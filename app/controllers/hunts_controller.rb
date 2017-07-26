@@ -25,11 +25,23 @@ class HuntsController < ApplicationController
 
   def edit
     # require 'pry'; binding.pry
-    @hunt = current_user.hunts.find_by(params[:id])
+    @hunt = current_user.hunts.find(params[:id])
+  end
+
+  def update
+    @hunt = current_user.hunts.find(params[:id])
+    @hunt.update(hunt_params)
+    if @hunt.save
+      redirect_to hunts_path, notice: "Hunt details updated successfully."
+    else
+      render :edit, notice: "Something went wrong. Please try again."
+    end
   end
 
   def destroy
-    @hunt = current_user.hunts.find_by(params[:id])
+    @hunt = current_user.hunts.find(params[:id])
+    @hunt.destroy
+    redirect_to hunts_path, notice: "Hunt deleted successfully."
   end
 
   private

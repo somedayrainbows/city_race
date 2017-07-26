@@ -22,4 +22,13 @@ RSpec.feature "as an authenticated user" do
 
     expect(current_path).to eq(user_path(@user.id))
   end
+  scenario "i can see my data on my profile page" do
+    visit user_path(@user.id)
+
+    expect(page).to have_content(@user.first_name)
+    expect(page).to have_content(@user.last_name)
+    expect(page).to have_content(@user.email)
+    expect(page).to have_content("Join a Team")
+    expect(page).to have_content("Create a Hunt")
+  end
 end
