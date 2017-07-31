@@ -2,6 +2,7 @@ class HuntsController < ApplicationController
   before_action :authorize
 
   def show
+    #react
   end
 
   def index

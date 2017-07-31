@@ -18,6 +18,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'faker'
 gem 'bootstrap_form'
+gem 'react-rails', github: 'reactjs/react-rails'
 
 group :development, :test do
   gem 'pry'
