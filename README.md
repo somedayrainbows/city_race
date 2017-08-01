@@ -11,9 +11,23 @@ To set up your local environment and/or contribute:
 
 Note: If you'd like to contribute, please fork the project and submit a pull request with your contribution.
 
-- Clone the repository: git clone https://github.com/somedayrainbows/city_race.git
-- cd into the project's directory
-- Run bundle
-- Run bundle exec rake db:{create,migrate,seed} to set up the database locally and seed it with clues, hunts, and users.
-- Run the application in the dev environment with rails s
-- Visit http://localhost:3000/
+Clone the repository
+`$ git clone https://github.com/somedayrainbows/city_race.git `
+
+cd into the project's directory
+`$ cd city_race `
+
+Install the included gems
+`$ bundle `
+
+Install RSpec
+`$ rails g rspec:install `
+
+Create, setup and seed the database to set up the database locally and seed it with clues, hunts, and users.
+`$ bundle exec rake db:{create,migrate,seed} `
+
+Run the application in the dev environment
+`$ rails s `
+
+Visit the dev environment on localhost:
+`http://localhost:3000/ `
