@@ -1,9 +1,11 @@
 class Api::V1::CluesController < Api::V1::BaseController
   def index
+    # require 'pry'; binding.pry
     respond_with Clue.all
   end
 
   def create
+    # require 'pry'; binding.pry
     respond_with :api, :v1, Clue.create(clue_params)
   end
 
@@ -20,7 +22,7 @@ class Api::V1::CluesController < Api::V1::BaseController
   private
 
   def clue_params
-    params.require(:clue).permit(:title, :description, :task_type, :order)
+    params.require(:clue).permit(:title, :description, :task_type, :order, :hunt_id)
   end
 
 end

@@ -1,1 +1,10 @@
-render react here
+<div className="container">
+  <div className="row">
+    <% @clues.each do |clue| %>
+      <%= clue.title %><br>
+      <%= clue.description %><br>
+      <%= clue.task_type %><br>
+      <%= clue.order %><br>
+    <% end %>
+  </div>
+</div>

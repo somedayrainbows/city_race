@@ -2,6 +2,9 @@ class HuntsController < ApplicationController
   before_action :authorize
 
   def show
+    # require 'pry'; binding.
+    @hunt = Hunt.find(params[:id])
+    @clues = @hunt.clues
   end
 
   def index
@@ -45,7 +48,7 @@ class HuntsController < ApplicationController
   private
 
   def hunt_params
-    params.require(:hunt).permit(:name, :description)
+    params.require(:hunt).permit(:id, :name, :description)
   end
 
 end
