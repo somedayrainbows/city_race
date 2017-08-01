@@ -1,5 +1,6 @@
 class Api::V1::CluesController < Api::V1::BaseController
   def index
+    # require 'pry'; binding.pry
     respond_with Clue.all
   end
 
