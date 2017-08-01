@@ -6,3 +6,14 @@ CityRacers is a custom scavenger hunt app. Users can create a custom urban hunt 
 ### This app is currently in development and offers limited functionality at this time.
 
 Tech stack: Rails, React, Bootstrap, PostgreSQL, RSpec, Capybara, Selenium, Factory Girl, Travis CI, Heroku
+
+To set up your local environment and/or contribute:
+
+Note: If you'd like to contribute, please fork the project and submit a pull request with your contribution.
+
+- Clone the repository: git clone https://github.com/somedayrainbows/city_race.git
+- cd into the project's directory
+- Run bundle
+- Run bundle exec rake db:{create,migrate,seed} to set up the database locally and seed it with clues, hunts, and users.
+- Run the application in the dev environment with rails s
+- Visit http://localhost:3000/
