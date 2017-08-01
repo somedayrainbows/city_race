@@ -8,7 +8,7 @@ class AllClues extends React.Component {
   }
 
   render() {
-    let clues = this.props.clues.map(clue => (
+    let clues = this.props.clues.reverse().map(clue => (
       <div className="col-md-3" className="card" key={clue.id}>
         <Clue
           clue={clue}

@@ -1,11 +1,10 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h3>&nbsp;</h3>
-      <%= link_to "Back to my hunts", hunts_path, class: "btn btn-new btn-sm scroll" %>
-<h3>Add clues to <%= @hunt.name %> </h3>
-<hr>
-<%= react_component 'Main' %>
-</div>
-</div>
+<div className="container">
+  <div className="row">
+    <% @clues.each do |clue| %>
+      <%= clue.title %><br>
+      <%= clue.description %><br>
+      <%= clue.task_type %><br>
+      <%= clue.order %><br>
+    <% end %>
+  </div>
 </div>

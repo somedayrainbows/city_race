@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   resources :users, only: [:show]
-  resources :hunts
-  resources :teams
+  resources :hunts do
+    resources :clues, only: [:index]
+    resources :teams, only: [:index]
+  end
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
