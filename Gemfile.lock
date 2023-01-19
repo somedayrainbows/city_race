@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/reactjs/react-rails.git
-  revision: 83b6175460b6fd19d667854ebea4777d8c73705a
+  remote: https://github.com/reactjs/react-rails.git
+  revision: 35f9397fc9c0a33f5b03a1e4972028d394a2f219
   specs:
-    react-rails (2.4.4)
+    react-rails (2.6.2)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -80,8 +80,8 @@ GEM
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
-    concurrent-ruby (1.0.5)
-    connection_pool (2.2.2)
+    concurrent-ruby (1.1.10)
+    connection_pool (2.3.0)
     crass (1.0.4)
     database_cleaner (1.7.0)
     diff-lcs (1.3)
@@ -103,9 +103,9 @@ GEM
       thor (~> 0.14)
     font-awesome-sass (5.0.13)
       sassc (>= 1.11)
-    globalid (0.4.1)
-      activesupport (>= 4.2.0)
-    i18n (1.0.1)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -128,7 +128,7 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.3)
+    minitest (5.17.0)
     multi_json (1.13.1)
     multipart-post (2.0.0)
     nio4r (2.3.1)
@@ -239,7 +239,7 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (4.1.12)
       execjs (>= 0.3.0, < 3)
